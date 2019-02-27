@@ -25,10 +25,10 @@ def listQuery(data, fName):
 
 def printClean(newData):
     final_list = []
-    if len(newData) != 0:
+    try:
         for x in range(len(newData)):
             final_list.append(newData[x])
-    else:
+    except:
         return "Can't"
     return final_list
 

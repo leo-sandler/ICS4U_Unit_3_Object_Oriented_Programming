@@ -5,8 +5,8 @@
 # is a module. Importing tells the current Python file that you want to use another file's functions, etc.
 
 import functions
-import moduleTasks
+from moduleTasks import *
 
 print(functions.return0dd([00, 11, 22, 33, 44, 55]))
 
-moduleTasks.printClean_P2(printClean(listQuery(csvTo2DList("studentInfo.txt"), specialInput())))
+printClean_P2(printClean(listQuery(csvTo2DList("studentInfo.txt"), specialInput())))
