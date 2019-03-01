@@ -33,4 +33,18 @@ print("This car is a " + new_car.numberOfDoors + ".\nIt is " + new_car.colour + 
                                                                                 "" + new_car.brand + ".\n\n")
 new_car = Car(2, "Blue", "Ford")
 print("This car is a " + new_car.numberOfDoors + ".\nIt is " + new_car.colour + "\nIt is made by "
-                                                                                "" + new_car.brand + ".\n\n")
+                                                                               "" + new_car.brand + ".\n\n")
+
+class MyClass:
+    def method(self):
+        return 'instance method called', self
+
+    @classmethod
+    def classmethod(cls):
+        return 'class method called', cls
+
+    @staticmethod
+    def staticmethod():
+        return 'static method called'
+
+print(MyClass.classmethod())
